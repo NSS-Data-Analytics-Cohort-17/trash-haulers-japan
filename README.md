@@ -1,37 +1,31 @@
-## Project Overview
+## Missed Trash Pickups
 
-This project analyzes an Excel dataset containing service requests from hubNashville, Metro Nashville’s customer service platform. The source data was imported into Python for cleaning, classification, financial analysis, and visualization.
+## Before You Begin:
 
-The analysis distinguishes missed pickups from other complaints, standardizes inconsistent address and hauler data, and identifies recurring failures at the same premises. Under the existing contract methodology, the first missed pickup does not result in a penalty, while each subsequent occurrence generates a $200 fine.
+-- In your repo create a 'data' folder and a 'scripts' folder. Save your data in the data folder and save your scripts in the scripts folder.
 
-## Project Objective
+-- Create a branch which only you will use.  Name your branch your first name.
 
-Transform raw Excel service-request data into an analysis of financial liability and operational performance by determining:
+-- Put your first name at the end of every script your right.   Example:    'trash_eda_Chris.ipynb'
 
-- Which service requests represent legitimate missed pickups
-- Which addresses experienced repeated collection failures
-- How much each trash hauler owes under the current fine policy
-- How contractor and Metro collection performance compare
-- Which routes generated the most missed-pickup complaints
-- Whether complaint patterns change by year, month, or season
-- How damages would change under proposed 180-day fine policies
-- How preventing dates from being reused would affect total fines
+-- Change you gitignore prior to your first push.  The gitignore should indicate that you wish to ignore the 'data' folder
 
-## Technologies Used
 
-- Microsoft Excel
-- Python
-- Jupyter Notebook
+------MAIN PROJECT---------------------------------
 
-## Techniques and Methodology Used
 
-- Excel data ingestion and validation with pandas
-- Regex-based classification of complaint descriptions
-- Address normalization and composite location-key construction
-- Rule-based identification of recurring service failures
-- Contract-based damage and penalty calculations
-- Performance segmentation by trash hauler and collection route
-- Temporal segmentation by year, month, and season
-- Year-over-year and seasonal complaint analysis
-- Time-series visualization with Seaborn and Matplotlib
-- Scenario-based comparison of current and proposed fine policies
+In this data question you will be working data of service request related to missed trash pickups from hubNashville, Metro Nashville government's comprehensive customer service system (https://hub.nashville.gov).
+
+As part of Metro's contract with Red River Waste Solutions, failure to remedy an action or inaction will result in liquidated damages. One category of liquidated damages is related to chronic problems in any category of service at the same premises. A chronic problem is defined as more than one missed pickup for any address. The first missed pickup will not result in a fine; however, every subsequent missed pickup will result in a $200 fine.
+
+Your job is to determine the total amount of damages due to missed pickups. Note that not all rows that you have been provided correspond to missed pickups and that you will need to ensure that you are only counting missed pickups.
+
+After determining the total amount of damages, you can look at other questions:
+
+* What other types of complaints are there?
+* How do metro crews compare to the contractor's performance?
+* How much does each trash hauler owe?
+* What were to total missed pickup by route?
+
+Before you begin, explore the data.  Cleaning and preparing the data for analysis is an important and necessary step.  
+Planning and communication are vital to success. This data and analysis are based on a real-world project.
